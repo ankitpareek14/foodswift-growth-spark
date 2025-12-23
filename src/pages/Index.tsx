@@ -5,6 +5,7 @@ import { ProblemSlide } from "@/components/slides/ProblemSlide";
 import { HypothesisSlide } from "@/components/slides/HypothesisSlide";
 import { SolutionSlide } from "@/components/slides/SolutionSlide";
 import { WireframeSlide } from "@/components/slides/WireframeSlide";
+import { FullWireframeSlide } from "@/components/slides/FullWireframeSlide";
 import { MetricsSlide } from "@/components/slides/MetricsSlide";
 
 const slides = [
@@ -13,6 +14,7 @@ const slides = [
   { component: HypothesisSlide, name: "Hypothesis Validation" },
   { component: SolutionSlide, name: "Solution Design" },
   { component: WireframeSlide, name: "Wireframes" },
+  { component: FullWireframeSlide, name: "User Journeys" },
   { component: MetricsSlide, name: "Metrics & Risks" },
 ];
 

@@ -7,6 +7,7 @@ import { SolutionSlide } from "@/components/slides/SolutionSlide";
 import { WireframeSlide } from "@/components/slides/WireframeSlide";
 import { FullWireframeSlide } from "@/components/slides/FullWireframeSlide";
 import { MetricsSlide } from "@/components/slides/MetricsSlide";
+import { Helmet } from "react-helmet";
 
 const slides = [
   { component: CoverSlide, name: "Cover" },
@@ -57,12 +58,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* SEO Meta */}
-      <title>FoodSwift Case Study | Solving Order Drop Crisis</title>
-      <meta name="description" content="PM case study analyzing declining orders at FoodSwift with data-driven hypotheses, solutions, and wireframes." />
+      <Helmet>
+        <title>FoodSwift Case Study | Solving Order Drop Crisis</title>
+        <meta name="description" content="PM case study analyzing declining orders at FoodSwift with data-driven hypotheses, solutions, and wireframes." />
+      </Helmet>
       
       {/* Slide Content */}
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden pb-20">
         <CurrentSlideComponent />
       </main>
 

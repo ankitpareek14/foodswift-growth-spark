@@ -7,6 +7,7 @@ import { SolutionSlide } from "@/components/slides/SolutionSlide";
 import { WireframeSlide } from "@/components/slides/WireframeSlide";
 import { FullWireframeSlide } from "@/components/slides/FullWireframeSlide";
 import { MetricsSlide } from "@/components/slides/MetricsSlide";
+import { ExportMenu } from "@/components/ExportMenu";
 import { Helmet } from "react-helmet";
 
 const slides = [
@@ -57,11 +58,14 @@ const Index = () => {
   const CurrentSlideComponent = slides[currentSlide].component;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background print:bg-white">
       <Helmet>
         <title>FoodSwift Case Study | Solving Order Drop Crisis</title>
         <meta name="description" content="PM case study analyzing declining orders at FoodSwift with data-driven hypotheses, solutions, and wireframes." />
       </Helmet>
+      
+      {/* Export Button */}
+      <ExportMenu />
       
       {/* Slide Content */}
       <main className="overflow-x-hidden pb-20">

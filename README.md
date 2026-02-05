@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: [https://lovable.dev/projects/FoodSWift](https://foodswift-growth-spark.lovable.app)
+**URL**: (https://foodswift-growth-spark.lovable.app)
 
 ## How can I edit this code?
 
